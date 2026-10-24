@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://enlace-de-tu-imagen-o-gif-de-flores.com" alt="Flores" width="100%">
+</p>
+
 # App de Autenticación en Flutter
 
 App móvil con 6 pantallas: Login, Registro, Recuperar contraseña, Verificación de código, Nueva contraseña y Home. Usa solo el SDK estándar de Flutter, sin dependencias externas.
