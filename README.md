@@ -1,4 +1,3 @@
-# maquetacion_1
 # App de Autenticación en Flutter
 
 App móvil con 6 pantallas: Login, Registro, Recuperar contraseña, Verificación de código, Nueva contraseña y Home. Usa solo el SDK estándar de Flutter, sin dependencias externas.
@@ -45,20 +44,21 @@ flutter doctor
    flutter run
    ```
 
-> Si empiezas desde cero: `flutter create nombre_del_proyecto`, copia los archivos `.dart` dentro de `lib/` (reemplazando `main.dart`) y sigue desde el paso 2.
+> Si empiezas desde cero: `flutter create nombre_del_proyecto`, crea la carpeta `lib/pages/`, copia allí las pantallas y `widgets.dart`, reemplaza `lib/main.dart` y sigue desde el paso 2.
 
 ## Estructura
 
 ```
 lib/
-├── main.dart              # MaterialApp y rutas nombradas
-├── widgets.dart           # Colores, gradientes y componentes reutilizables
-├── login.dart             # LoginScreen
-├── registro.dart          # RegisterScreen
-├── recuperar.dart         # ForgotPasswordScreen
-├── verificar.dart         # VerificationCodeScreen
-├── nueva_contrasena.dart  # NewPasswordScreen
-└── home.dart              # HomeScreen
+├── main.dart                  # MaterialApp y rutas nombradas
+└── pages/
+    ├── widgets.dart           # Colores, gradientes y componentes reutilizables
+    ├── login.dart             # LoginScreen
+    ├── registro.dart          # RegisterScreen
+    ├── recuperar.dart         # ForgotPasswordScreen
+    ├── verificar.dart         # VerificationCodeScreen
+    ├── nueva_contrasena.dart  # NewPasswordScreen
+    └── home.dart              # HomeScreen
 ```
 
 ## Rutas
@@ -83,4 +83,3 @@ lib/
 - Los datos son simulados: no hay backend, la autenticación solo valida los formularios.
 - La fuente del diseño es **Inter**. Es opcional: si no la agregas en `pubspec.yaml`, Flutter usa la fuente por defecto.
 - Si te sale un error con `withValues`, tu Flutter es anterior a 3.27: actualiza con `flutter upgrade`.
-A new Flutter project.
